@@ -1,0 +1,12 @@
+[submodule "interf_dqn"]
+	path = interf_dqn
+	url = https://dmsoroki@bitbucket.org/dmsoroki/interf_dqn.git
+[submodule "interf_game"]
+	path = interf_game
+	url = https://dmsoroki@bitbucket.org/dmsoroki/interf_game.git
+[submodule "gym_interf"]
+	path = gym_interf
+	url = https://dmsoroki@bitbucket.org/dmsoroki/gym_interf.git
+[submodule "iron_interf"]
+	path = iron_interf
+	url = https://dmsoroki@bitbucket.org/dmsoroki/iron_interf.git
