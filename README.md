@@ -2,6 +2,7 @@
 
 This repository is the official implementation of [Interferobot: aligning an optical interferometer by a reinforcement learning agent ](https://arxiv.org/abs/TODO). 
 
+![Alt Text](gif/animation.gif)
 > 📋Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
 ## Structure
@@ -11,25 +12,17 @@ This repo contains the following four submodules
 * interf_dqn --- code to train double dueling dqn agent
 * iron_interf --- gym environment for hardware interferometer
 
-
-## Requirements
-
-To install requirements:
-
-```setup
-pip install -r requirements.txt
-```
-
 ## Installation
 
-### clone the repo with including submodules 
+### Clone the repo including submodules 
 ```
-git clone --recurse-submodules 
+git clone --recurse-submodules git@github.com:dmitrySorokin/interferobotProject.git
 ```
 
 ### interferometer simulator
 ```
 cd gym_interf
+pip3 install -r requirements.txt
 pip3 install -e ./
 ```
 
@@ -99,6 +92,15 @@ You can download pretrained models here:
 - [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
 
 > 📋Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
+
+
+## Datasets
+
+[google drive](https://drive.google.com/drive/folders/1hJ7qZNdD0RXapVm97u8iSA2aWGZymRJf?usp=sharing)
+
+## Videos
+
+[google drive](https://drive.google.com/drive/folders/1aCN76hxIwY7zNbrZd84NIdNhdQE5yzfP?usp=sharing)
 
 ## Results
 
