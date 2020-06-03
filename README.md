@@ -10,10 +10,14 @@ This repository is the official implementation of [Interferobot: aligning an opt
 
 ## Structure
 This repo contains the following four submodules 
-* interf_game &mdash interactive user interface
-* gym_interf &mdash gym environment for interferometer simulator
-* interf_dqn &mdash code to train double dueling dqn agent
-* iron_interf &mdash gym environment for hardware interferometer
+
+|---|---|
+| interf_game  |  interactive user interface  for both simulator and hardware interferometer| 
+| gym_interf    |  gym environment for interferometer simulator  | 
+|  iron_interf    |  gym environment for hardware interferometer |
+|  interf_dqn    |  code to train double dueling dqn agent |
+|---|---|
+
 
 ## Installation
 
@@ -103,11 +107,12 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 > 📋Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
 
 
-## Datasets
+## Experimental data
 
+### 
 [google drive](https://drive.google.com/drive/folders/1hJ7qZNdD0RXapVm97u8iSA2aWGZymRJf?usp=sharing)
 
-## Videos
+### Videos
 
 [google drive](https://drive.google.com/drive/folders/1aCN76hxIwY7zNbrZd84NIdNhdQE5yzfP?usp=sharing)
 
