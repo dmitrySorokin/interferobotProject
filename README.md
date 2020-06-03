@@ -11,10 +11,10 @@ This repository is the official implementation of [Interferobot: aligning an opt
 ## Structure
 This repo contains the following four submodules 
 
-| interf_game  |  interactive user interface  for both simulator and hardware interferometer| 
-| gym_interf    |  gym environment for interferometer simulator  | 
-|  iron_interf    |  gym environment for hardware interferometer |
-|  interf_dqn    |  code to train double dueling dqn agent |
+* interf_game  -  interactive user interface  for both simulator and hardware interferometer
+* gym_interf    -  gym environment for interferometer simulator  
+*  iron_interf    -  gym environment for hardware interferometer
+*  interf_dqn    -  code to train double dueling dqn agent
 
 
 ## Installation
