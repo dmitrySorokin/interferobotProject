@@ -2,9 +2,8 @@
 
 This repository is the official implementation of [Interferobot: aligning an optical interferometer by a reinforcement learning agent ](https://arxiv.org/abs/TODO). 
 
-<img src="gif/animation.gif" width="256"/>
+<img src="gif/animation.gif" width="400"/>
 
-![Alt Text]()
 > 📋Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
 ## Structure
