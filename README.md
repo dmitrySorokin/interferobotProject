@@ -4,6 +4,13 @@ This repository is the official implementation of [Interferobot: aligning an opt
 
 > 📋Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
+## Structure
+This repo contains the following four submodules 
+* interf_game
+* gym_interf
+* interf_dqn
+* iron_interf
+
 ## Requirements
 
 To install requirements:
