@@ -1,8 +1,6 @@
-> 📋A template README.md for code accompanying a Machine Learning paper
+# Interferobot: aligning an optical interferometer by a reinforcement learning agent 
 
-# My Paper Title
-
-This repository is the official implementation of [My Paper Title](https://arxiv.org/abs/2030.12345). 
+This repository is the official implementation of [Interferobot: aligning an optical interferometer by a reinforcement learning agent ](https://arxiv.org/abs/TODO). 
 
 > 📋Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
 
