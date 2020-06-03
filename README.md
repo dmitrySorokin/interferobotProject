@@ -5,7 +5,6 @@ This repository is the official implementation of [Interferobot: aligning an opt
 <p float="center">
     <img src="gif/0.gif" width="400"/>
     <img src="gif/2.gif" width="400"/>
-    <img src="gif/20.gif" width="400"/>
 </p>
 
 
