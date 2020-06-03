@@ -66,14 +66,14 @@ cd interf_game
 python3 main_sim.py #TODO add agent args
 ```
 
-  You can try to align the interferometer manually by keyboard:
-  * w, a, s, d - controlls mirror 1
-  * i, j, k, l  - controlls beam splitter 2
-  * r - reset the simulator to a random position
-  * q - move to alligned state
+You can try to align the interferometer manually by keyboard:
+* w, a, s, d - controlls mirror 1
+* i, j, k, l  - controlls beam splitter 2
+* r - reset the simulator to a random position
+* q - move to alligned state
 
-  Or let the agent do this:
-    * press space to run/stop the agent
+Or let the agent do this:
+* press space to run/stop the agent
 
 
 Evaluate the trained agent for 100 episodes:
