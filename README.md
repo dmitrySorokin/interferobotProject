@@ -9,7 +9,7 @@ This repository is the official implementation of [Interferobot: aligning an opt
 
 
 ## Structure
-This repo contains the following four submodules 
+This repo contains the following four submodules :
 
 * interf_game  -  interactive user interface  for both simulator and hardware interferometer
 * gym_interf    -  gym environment for interferometer simulator  
@@ -70,7 +70,9 @@ it will start pygame interface. You can try to align the interferometer manually
 * i, j, k, l  - controlls beam splitter 2
 * press r to reset the simulator to a random position
 * press q to move to alligned state
-* press space to run the trained agent
+
+Or let the agent to this:
+* press space to run/stop the agent
 
 
 to evaluate the trained agent for 100 episodes run:
