@@ -6,10 +6,11 @@ This repository is the official implementation of [Interferobot: aligning an opt
 
 ## Structure
 This repo contains the following four submodules 
-* interf_game
-* gym_interf
-* interf_dqn
-* iron_interf
+* interf_game --- interactive user interface
+* gym_interf --- gym environment for interferometer simulator
+* interf_dqn --- code to train double dueling dqn agent
+* iron_interf --- gym environment for hardware interferometer
+
 
 ## Requirements
 
@@ -18,6 +19,56 @@ To install requirements:
 ```setup
 pip install -r requirements.txt
 ```
+
+## Installation
+
+### clone the repo with including submodules 
+```
+git clone --recurse-submodules 
+```
+
+### interferometer simulator
+```
+cd gym_interf
+pip3 install -e ./
+```
+
+### hardware interferometer
+
+apt-get install libusb-1.0-0 (to install drivers) 
+pip3 install pyusb (1.0.2) (python bindings) 
+pip3 install pyueye (python bindings)
+http://www.sanxo.eu/content/techtips/TechTip_Embedded_Vision_Kit_EN.pdf
+https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
+/usr/bin/ueyeusbd
+
+```
+cd iron_interf
+pip3 install -e ./
+```
+
+## Running
+```
+cd interf_game
+python3 main_sim.py
+```
+```
+cd interf_game
+python3 eval_sim.py
+```
+
+```
+cd interf_game
+python3 main.py
+```
+```
+cd interf_game
+python3 eval.py
+```
+
+
+
+### hardware interferometer
 
 > 📋Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
 
