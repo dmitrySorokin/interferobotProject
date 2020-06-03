@@ -60,29 +60,29 @@ Pretrained models located in interf_game submodule:
 ## Running
 
 ### interferometer simulator 
-to run it in iteractive mode do:
+Run it in iteractive mode do:
 ```
 cd interf_game
-python3 main_sim.py
+python3 main_sim.py #TODO add agent args
 ```
-it will start pygame interface. You can try to align the interferometer manually by using keyboard:
-* w, a, s, d - controlls mirror 1
-* i, j, k, l  - controlls beam splitter 2
-* press r to reset the simulator to a random position
-* press q to move to alligned state
+    You can try to align the interferometer manually by keyboard:
+    * w, a, s, d - controlls mirror 1
+    * i, j, k, l  - controlls beam splitter 2
+    * r - reset the simulator to a random position
+    * q - move to alligned state
 
-Or let the agent to this:
-* press space to run/stop the agent
+    Or let the agent do this:
+    * press space to run/stop the agent
 
 
-to evaluate the trained agent for 100 episodes run:
+Evaluate the trained agent for 100 episodes:
 ```
 cd interf_game
-python3 eval_sim.py
+python3 eval_sim.py #TODO add agent args
 ```
 
 ### hardware interferometer
-the same functionality is available for hardware interferometer in 
+The same functionality is available for hardware interferometer in
 ```
 main.py and eval.py
 ```
@@ -93,7 +93,7 @@ To train the model(s) in the paper, run this command:
 
 ```
 cd interf_dqn
-./run.sh
+./run.sh #TODO add randomization args?
 ```
 
 ## Evaluation
@@ -109,7 +109,8 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 
 ## Experimental data
 
-### 
+### Evaluation data
+//TODO describe format, folders
 [google drive](https://drive.google.com/drive/folders/1hJ7qZNdD0RXapVm97u8iSA2aWGZymRJf?usp=sharing)
 
 ### Videos
