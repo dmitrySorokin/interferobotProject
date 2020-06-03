@@ -51,11 +51,13 @@ interf_game/ablation_models
 ```
 
 They are:
-*  all_random - model trained with all doman randomizations
-*  no_brightness_random - model trained without brightness randomization
-*  no_channel_shift - model trained without duty cycle randomization
-*  no_noise - model trained without noise 
-*  no_radius_random - model trained without radius randomization
+|  model |  description |  
+|---|---|
+| all_random  |  model trained with all doman randomizations  | 
+| no_brightness_random  |   model trained without brightness randomization | 
+|  no_channel_shift  |  model trained without duty cycle randomization |
+|  no_noise  |  model trained without noise white nose |
+|  no_radius_random  |  model trained without radius randomization |
 
 ## Running
 
