@@ -45,19 +45,15 @@ pip3 install -e ./
 
 ## Pre-trained Models
 
-Pretrained models are located in:
-```
-interf_game/ablation_models
-```
+Pretrained models located in interf_game submodule:
 
-They are:
-|  model |  description |  
+|  model |  description | 
 |---|---|
-| all_random  |  model trained with all doman randomizations  | 
-| no_brightness_random  |   model trained without brightness randomization | 
-|  no_channel_shift  |  model trained without duty cycle randomization |
-|  no_noise  |  model trained without noise white nose |
-|  no_radius_random  |  model trained without radius randomization |
+| interf_game/ablation_models/all_random  |  model trained with all doman randomizations  | 
+| interf_game/ablation_models/no_brightness_random  |   model trained without brightness randomization | 
+|  interf_game/ablation_models/no_channel_shift  |  model trained without duty cycle randomization |
+|  interf_game/ablation_models/no_noise  |  model trained without noise white nose |
+|  interf_game/ablation_models/no_radius_random  |  model trained without radius randomization |
 
 ## Running
 
