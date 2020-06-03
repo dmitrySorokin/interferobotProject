@@ -22,14 +22,14 @@ This repo contains the following four submodules
 git clone --recurse-submodules git@github.com:dmitrySorokin/interferobotProject.git
 ```
 
-### interferometer simulator
+### * interferometer simulator
 ```
 cd gym_interf
 pip3 install -r requirements.txt
 pip3 install -e ./
 ```
 
-### hardware interferometer
+### * hardware interferometer
 
 apt-get install libusb-1.0-0 (to install drivers) 
 pip3 install pyusb (1.0.2) (python bindings) 
@@ -43,40 +43,56 @@ cd iron_interf
 pip3 install -e ./
 ```
 
+## Pre-trained Models
+
+Pretrained models are located in:
+```
+interf_game/ablation_models
+```
+
+They are:
+*  all_random - model trained with all doman randomizations
+*  no_brightness_random - model trained without brightness randomization
+*  no_channel_shift - model trained without duty cycle randomization
+*  no_noise - model trained without noise 
+*  no_radius_random - model trained without radius randomization
+
 ## Running
+
+### interferometer simulator 
+to run it in iteractive mode do:
 ```
 cd interf_game
 python3 main_sim.py
 ```
+it will start pygame interface. You can try to align the interferometer manually by using keyboard:
+* w, a, s, d - controlls mirror 1
+* i, j, k, l  - controlls beam splitter 2
+* press r to reset the simulator to a random position
+* press q to move to alligned state
+* press space to run the trained agent
+
+
+to evaluate the trained agent for 100 episodes run:
 ```
 cd interf_game
 python3 eval_sim.py
 ```
 
-```
-cd interf_game
-python3 main.py
-```
-```
-cd interf_game
-python3 eval.py
-```
-
-
-
 ### hardware interferometer
-
-> 📋Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+the same functionality is available for hardware interferometer in 
+```
+main.py and eval.py
+```
 
 ## Training
 
 To train the model(s) in the paper, run this command:
 
-```train
-python train.py --input-data <path_to_data> --alpha 10 --beta 20
 ```
-
-> 📋Describe how to train the models, with example commands on how to train the models in your paper, including the full training procedure and appropriate hyperparameters.
+cd interf_dqn
+./run.sh
+```
 
 ## Evaluation
 
@@ -87,14 +103,6 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 ```
 
 > 📋Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
-
-## Pre-trained Models
-
-You can download pretrained models here:
-
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
-
-> 📋Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
 
 
 ## Datasets
