@@ -104,12 +104,14 @@ Evaluate the trained agent for 100 episodes:
 cd interf_game
 python3 eval_sim.py --model=ablation_models/all_random --ngames=100 --log_dir=all_random
 ```
-This will create directory all_random with files:
+> This will create directory all_random with files:
 * log.txt - semicolon separated values igame, istep, visib_camera, visib_device
-* game_{igame}_step_{istep}.npz - numpy arxieves with fields 'state', 'action', 'next_state', 'done', 'visib_device', 'visib_camera'
-
+* game_{igame}_step_{istep}.npz - numpy arxieves with fields state, action, next_state, done, visib_device, visib_camera
 
 > Describe visualization
+```
+./show.py --game=0 --folder=all_random
+```
 
 
 ## Experimental data
