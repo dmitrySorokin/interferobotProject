@@ -9,7 +9,7 @@ This repository is the official implementation of [Interferobot: aligning an opt
 
 
 ## Structure
-This repo contains the following four submodules :
+This repo contains the following four submodules:
 
 * interf_game  -  interactive user interface  for both simulator and hardware interferometer
 * gym_interf    -  gym environment for interferometer simulator  
@@ -24,24 +24,38 @@ This repo contains the following four submodules :
 git clone --recurse-submodules git@github.com:dmitrySorokin/interferobotProject.git
 ```
 
-### * interferometer simulator
+### Interferometer simulator
 ```
 cd gym_interf
 pip3 install -r requirements.txt
 pip3 install -e ./
 ```
 
-### * hardware interferometer
+### Hardware interferometer
 
-apt-get install libusb-1.0-0 (to install drivers) 
-pip3 install pyusb (1.0.2) (python bindings) 
-pip3 install pyueye (python bindings)
-http://www.sanxo.eu/content/techtips/TechTip_Embedded_Vision_Kit_EN.pdf
+
+Install drivers for mirror mounts and python bindings
+```
+apt-get install libusb-1.0-0
+pip3 install pyusb (1.0.2)
+```
+
+Install drivers for camera and python bindings
 https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
-/usr/bin/ueyeusbd
+```
+pip3 install pyueye
+```
+
+Run camera daemon
+```
+./usr/bin/ueyeusbd
 
 ```
+
+Install gym environment
+```
 cd iron_interf
+a
 pip3 install -e ./
 ```
 
