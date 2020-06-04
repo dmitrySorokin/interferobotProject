@@ -126,13 +126,15 @@ python3 eval_sim.py #TODO add agent args
 
 ## Results
 
-Our model achieves the following performance in Sim2Real transter:
+Our models trained entierly in simulation achieves the following performance in Sim2Real transter:
 
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
+| Model name         | visibility | return |
 | ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
-
-> 📋Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
+| all_random                    |   **0.96 ± 0.02**  |  **221 ± 54**  |
+| no_radius_random        | 0.74 ± 0.20         | 85 ± 69          |
+| no_brightness_random | 0.91 ± 0.04         | 178 ± 39        |
+| no_noise                       | 0.82 ± 0.07         | 129 ± 43        |
+| no_channel_shift          | 0.89 ± 0.07         | 200 ± 42        | 
 
 
 ## Contributing
