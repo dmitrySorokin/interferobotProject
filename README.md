@@ -33,15 +33,14 @@ pip3 install -e ./
 
 ### Hardware interferometer
 
-
 Install drivers for mirror mounts and python bindings
 ```
 apt-get install libusb-1.0-0
 pip3 install pyusb (1.0.2)
 ```
 
-Install drivers for camera and python bindings
-https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
+Install drivers for camera [from here](https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
+) and python bindings
 ```
 pip3 install pyueye
 ```
@@ -49,13 +48,11 @@ pip3 install pyueye
 Run camera daemon
 ```
 ./usr/bin/ueyeusbd
-
 ```
 
 Install gym environment
 ```
 cd iron_interf
-a
 pip3 install -e ./
 ```
 
