@@ -11,7 +11,7 @@ This repository is the official implementation of [Interferobot: aligning an opt
 ## Structure
 This repo contains the following four submodules:
 
-* interf_game  -  interactive user interface  for both simulator and hardware interferometer
+* interf_game  -  interactive user interface for both simulator and hardware interferometer
 * gym_interf    -  gym environment for interferometer simulator  
 * iron_interf    -  gym environment for hardware interferometer
 * interf_dqn    -  code to train double dueling dqn agent
@@ -26,12 +26,14 @@ git clone --recurse-submodules git@github.com:dmitrySorokin/interferobotProject.
 
 ### Interferometer simulator
 ```
-cd gym_interf
-pip3 install -e ./
+pip3 install -e gym_interf
+```
+### User interface 
+```
+pip3 install -r interf_game/requirements.txt
 ```
 
 ### Hardware interferometer
-
 Install drivers for mirror mounts and python bindings
 ```
 apt-get install libusb-1.0-0
@@ -51,8 +53,7 @@ Run camera daemon
 
 Install gym environment
 ```
-cd iron_interf
-pip3 install -e ./
+pip3 install -e iron_interf
 ```
 
 ## Pre-trained Models
