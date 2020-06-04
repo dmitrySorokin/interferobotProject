@@ -19,7 +19,7 @@ This repo contains the following four submodules:
 
 ## Installation
 
-### Clone the repo including submodules 
+### Clone including submodules 
 ```
 git clone --recurse-submodules git@github.com:dmitrySorokin/interferobotProject.git
 ```
@@ -27,7 +27,6 @@ git clone --recurse-submodules git@github.com:dmitrySorokin/interferobotProject.
 ### Interferometer simulator
 ```
 cd gym_interf
-pip3 install -r requirements.txt
 pip3 install -e ./
 ```
 
@@ -39,7 +38,7 @@ apt-get install libusb-1.0-0
 pip3 install pyusb (1.0.2)
 ```
 
-Install drivers for camera [from here](https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
+Install drivers for camera from [here](https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
 ) and python bindings
 ```
 pip3 install pyueye
@@ -70,8 +69,8 @@ Pretrained models located in interf_game submodule:
 
 ## Running
 
-### interferometer simulator 
-Run it in iteractive mode do:
+### Interferometer simulator 
+Run simulator in iteractive mode:
 ```
 cd interf_game
 python3 main_sim.py #TODO add agent args
@@ -82,21 +81,16 @@ You can try to align the interferometer manually by keyboard:
 * i, j, k, l  - controlls beam splitter 2
 * r - reset the simulator to a random position
 * q - move to alligned state
+* x - to change the step size
 
 Or let the agent do this:
-* press space to run/stop the agent
+* press space to run / stop the agent
 
-
-Evaluate the trained agent for 100 episodes:
+### Hardware interferometer
+The same functionality is available for hardware interferometer:
 ```
 cd interf_game
-python3 eval_sim.py #TODO add agent args
-```
-
-### hardware interferometer
-The same functionality is available for hardware interferometer in
-```
-main.py and eval.py
+python3 main.py
 ```
 
 ## Training
@@ -110,10 +104,11 @@ cd interf_dqn
 
 ## Evaluation
 
-To evaluate my model on ImageNet, run:
 
-```eval
-python eval.py --model-file mymodel.pth --benchmark imagenet
+Evaluate the trained agent for 100 episodes:
+```
+cd interf_game
+python3 eval_sim.py #TODO add agent args
 ```
 
 > 📋Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
@@ -131,9 +126,7 @@ python eval.py --model-file mymodel.pth --benchmark imagenet
 
 ## Results
 
-Our model achieves the following performance on :
-
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
+Our model achieves the following performance in Sim2Real transter:
 
 | Model name         | Top 1 Accuracy  | Top 5 Accuracy |
 | ------------------ |---------------- | -------------- |
