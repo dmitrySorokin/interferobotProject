@@ -74,7 +74,7 @@ Pretrained models located in interf_game submodule:
 Run simulator in iteractive mode:
 ```
 cd interf_game
-python3 main_sim.py --model=path/to/trained/model
+python3 main_sim.py --model=path/to/model
 ```
 
 You can try to align the interferometer manually by keyboard:
@@ -88,11 +88,7 @@ Or let the agent do this:
 * press space to run / stop the agent
 
 ### Hardware interferometer
-The same functionality is available for hardware interferometer:
-```
-cd interf_game
-python3 main.py
-```
+The same functionality is available for hardware interferometer in interf_game/main.py
 
 ## Training
 
@@ -103,15 +99,17 @@ cd interf_dqn
 ```
 
 ## Evaluation
-
-
 Evaluate the trained agent for 100 episodes:
 ```
 cd interf_game
-python3 eval_sim.py #TODO add agent args
+python3 eval_sim.py --model=ablation_models/all_random --ngames=100 --log_dir=all_random
 ```
+This will create directory all_random with files:
+* log.txt - semicolon separated values igame, istep, visib_camera, visib_device
+* game_{igame}_step_{istep}.npz - numpy arxieves with fields 'state', 'action', 'next_state', 'done', 'visib_device', 'visib_camera'
 
-> 📋Describe how to evaluate the trained models on benchmarks reported in the paper, give commands that produce the results (section below).
+
+> Describe visualization
 
 
 ## Experimental data
