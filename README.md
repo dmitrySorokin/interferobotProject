@@ -38,7 +38,7 @@ apt-get install libusb-1.0-0
 pip3 install pyusb (1.0.2)
 ```
 
-Install drivers for camera from [here](https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
+Install drivers for IDS camera from [here](https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
 ) and python bindings
 ```
 pip3 install pyueye
