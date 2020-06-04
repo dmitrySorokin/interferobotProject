@@ -74,7 +74,7 @@ Pretrained models located in interf_game submodule:
 Run simulator in iteractive mode:
 ```
 cd interf_game
-python3 main_sim.py #TODO add agent args
+python3 main_sim.py --model=path/to/trained/model
 ```
 
 You can try to align the interferometer manually by keyboard:
@@ -96,8 +96,7 @@ python3 main.py
 
 ## Training
 
-To train the model(s) in the paper, run this command:
-
+To train the models in the paper, run this command:
 ```
 cd interf_dqn
 ./run.sh #TODO add randomization args?
