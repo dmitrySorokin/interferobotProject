@@ -34,14 +34,14 @@ pip3 install -r interf_game/requirements.txt
 ```
 
 ### Hardware interferometer
-Install drivers for mirror mounts and python bindings
+Install drivers  and python bindings for mirror mounts
 ```
 apt-get install libusb-1.0-0
 pip3 install pyusb (1.0.2)
 ```
 
-Install drivers for IDS camera from [here](https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
-) and python bindings
+Install drivers from [here](https://en.ids-imaging.com/download-ueye-emb-hardfloat.html
+)  and python bindings for IDS camera 
 ```
 pip3 install pyueye
 ```
@@ -92,7 +92,7 @@ The same functionality is available for hardware interferometer in interf_game/m
 
 ## Training
 
-To train Interferobot with all domain randomizations run:
+Train Interferobot with all domain randomizations:
 ```
 cd interf_dqn
 ./run.sh
@@ -109,7 +109,7 @@ This will create directory all_random with files:
 * game_{igame}\_step_{istep}.npz - numpy arxieves with fields state, action, next_state, done, visib_device, visib_camera
 
 
-To visualize episoge 0 run: 
+Visualize episoge 0: 
 ```
 ./show.py --game_id=0 --folder=all_random
 ```
@@ -117,10 +117,10 @@ To visualize episoge 0 run:
 ## Experimental data
 
 ### Evaluation data 
-Evaluation episodes collected the physical interferometer for all trained models in the format described above are available at [google drive](https://drive.google.com/drive/folders/1hJ7qZNdD0RXapVm97u8iSA2aWGZymRJf?usp=sharing). 
+Evaluation episodes collected at the physical interferometer for all trained models in the format described above are available at [google drive](https://drive.google.com/drive/folders/1hJ7qZNdD0RXapVm97u8iSA2aWGZymRJf?usp=sharing). 
 
 ### Videos
-Alignment videos generated for all_random model evaluated at physical interferometer are available at [google drive](https://drive.google.com/drive/folders/1aCN76hxIwY7zNbrZd84NIdNhdQE5yzfP?usp=sharing).
+Alignment videos generated for all_random model evaluated at the physical interferometer are available at [google drive](https://drive.google.com/drive/folders/1aCN76hxIwY7zNbrZd84NIdNhdQE5yzfP?usp=sharing).
 
 ## Results
 
