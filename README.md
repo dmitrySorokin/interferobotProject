@@ -64,9 +64,9 @@ Pretrained models located in interf_game submodule:
 |---|---|
 | interf_game/ablation_models/all_random  |  model trained with all doman randomizations  | 
 | interf_game/ablation_models/no_brightness_random  |   model trained without brightness randomization | 
-|  interf_game/ablation_models/no_channel_shift  |  model trained without duty cycle randomization |
-|  interf_game/ablation_models/no_noise  |  model trained without noise white nose |
-|  interf_game/ablation_models/no_radius_random  |  model trained without radius randomization |
+| interf_game/ablation_models/no_channel_shift  |  model trained without duty cycle randomization |
+| interf_game/ablation_models/no_noise  |  model trained without noise white nose |
+| interf_game/ablation_models/no_radius_random  |  model trained without radius randomization |
 
 ## Running
 
@@ -92,10 +92,10 @@ The same functionality is available for hardware interferometer in interf_game/m
 
 ## Training
 
-To train the models in the paper, run this command:
+To train Interferobot with all domain randomizations run:
 ```
 cd interf_dqn
-./run.sh #TODO add randomization args?
+./run.sh
 ```
 
 ## Evaluation
@@ -104,11 +104,12 @@ Evaluate the trained agent for 100 episodes:
 cd interf_game
 python3 eval_sim.py --model=ablation_models/all_random --ngames=100 --log_dir=all_random
 ```
-> This will create directory all_random with files:
+This will create directory all_random with files:
 * log.txt - semicolon separated values igame, istep, visib_camera, visib_device
 * game_{igame}_step_{istep}.npz - numpy arxieves with fields state, action, next_state, done, visib_device, visib_camera
 
-> Describe visualization
+
+To visualize episoge 0 run: 
 ```
 ./show.py --game=0 --folder=all_random
 ```
@@ -116,9 +117,8 @@ python3 eval_sim.py --model=ablation_models/all_random --ngames=100 --log_dir=al
 
 ## Experimental data
 
-### Evaluation data
-//TODO describe format, folders
-[google drive](https://drive.google.com/drive/folders/1hJ7qZNdD0RXapVm97u8iSA2aWGZymRJf?usp=sharing)
+### Evaluation data 
+from the real interferometer in the format discribed above is available at: [google drive](https://drive.google.com/drive/folders/1hJ7qZNdD0RXapVm97u8iSA2aWGZymRJf?usp=sharing). 
 
 ### Videos
 
