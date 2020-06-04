@@ -1,6 +1,6 @@
 # Interferobot: aligning an optical interferometer by a reinforcement learning agent 
 
-This repository is the official implementation of [Interferobot: aligning an optical interferometer by a reinforcement learning agent ](https://arxiv.org/abs/TODO). 
+This repository is the official implementation of [Interferobot: aligning an optical interferometer by a reinforcement learning agent ](http://arxiv.org/abs/2006.02252).
 
 <p float="center">
     <img src="gif/0.gif" width="400"/>
@@ -13,8 +13,8 @@ This repo contains the following four submodules :
 
 * interf_game  -  interactive user interface  for both simulator and hardware interferometer
 * gym_interf    -  gym environment for interferometer simulator  
-*  iron_interf    -  gym environment for hardware interferometer
-*  interf_dqn    -  code to train double dueling dqn agent
+* iron_interf    -  gym environment for hardware interferometer
+* interf_dqn    -  code to train double dueling dqn agent
 
 
 ## Installation
