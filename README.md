@@ -111,7 +111,7 @@ This will create directory all_random with files:
 
 To visualize episoge 0 run: 
 ```
-./show.py --game=0 --folder=all_random
+./show.py --game_id=0 --folder=all_random
 ```
 
 ## Experimental data
@@ -124,7 +124,7 @@ Alignment videos generated for all_random model evaluated at physical interferom
 
 ## Results
 
-Our models trained entierly in simulation achieves the following performance in Sim2Real transter:
+Our models trained entirely in simulation achieves the following performance in zero-shot Sim2Real transfer:
 
 | Model name     | visibility | return |
 | ------------------ |---------------- | -------------- |
