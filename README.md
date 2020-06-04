@@ -24,16 +24,16 @@ This repo contains the following four submodules:
 git clone --recurse-submodules git@github.com:dmitrySorokin/interferobotProject.git
 ```
 
-### Interferometer simulator
+### Install interferometer simulator gym environment
 ```
 pip3 install -e gym_interf
 ```
-### User interface 
+### Install user interface 
 ```
 pip3 install -r interf_game/requirements.txt
 ```
 
-### Hardware interferometer
+### Install hardware interferometer gym environment
 Install drivers  and python bindings for mirror mounts
 ```
 apt-get install libusb-1.0-0
